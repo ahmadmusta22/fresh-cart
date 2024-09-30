@@ -30,7 +30,7 @@ export default function Register() {
                 setLoading(false)
                 localStorage.setItem('userToken',data.token)
                 setLogin(data.token)
-                navigate('/')
+                navigate('/login')
             })
 
             .catch((err) => {

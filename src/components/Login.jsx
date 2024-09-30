@@ -67,7 +67,7 @@ export default function Login() {
     <Helmet>
   <title>Login</title>
 </Helmet>
-    <div>
+    <div className=''>
       <h2 className='mt-32 text-xl  '>Login now :</h2>
 
       {msg ? <div className=" w-1/2 mx-auto p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
@@ -89,7 +89,7 @@ export default function Login() {
         {formik.errors.password && formik.touched.password ? <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
           <span className="font-medium">{formik.errors.password}</span>
         </div> : ''}
-        <button type="submit" className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>
+        <button type="submit" className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm  px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>
       </form>
       <p className='text-center py-5'>Dont have account? <Link to={'/register'} className='text-green-700 font-bold underline'>Register</Link> </p>
       <p className='text-center pb-5'>Dont have account? <Link to={'/forget'} className='text-green-700 font-bold underline'>ForgetPassword</Link> </p>
